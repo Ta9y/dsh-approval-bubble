@@ -1,0 +1,65 @@
+{
+  "name": "dsh-approval-bubble",
+  "version": "1.0.0",
+  "description": "DSH desktop plugin: bubbles beside sidebar session rows for background-session permission approvals, option questions and plan reviews, with in-place answer, translate and copy.",
+  "keywords": [
+    "dsh-plugin",
+    "dsh",
+    "deepseek-harness",
+    "deepseek",
+    "plugin",
+    "approval",
+    "permission",
+    "user-questions",
+    "plan-review",
+    "bubble",
+    "sidebar",
+    "translation"
+  ],
+  "license": "MIT",
+  "author": "Ta9y",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ta9y/dsh-approval-bubble.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ta9y/dsh-approval-bubble/issues"
+  },
+  "homepage": "https://github.com/Ta9y/dsh-approval-bubble#readme",
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.en.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-workspace",
+        "@deepseek-ai/dsh-client-ui-session",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}

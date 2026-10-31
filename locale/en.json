@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Approval / Interaction Bubbles",
+    "description": "Pops a bubble beside a sidebar session row when a background session needs a permission decision, an option answer, or a plan confirmation — orange for permission requests, blue for questions and plan reviews; approve, reject, choose, or submit in place, with translate and copy."
+  },
+  "bubble": {
+    "aria": "Session pending interaction bubble",
+    "hide": "Hide this bubble"
+  },
+  "kind": {
+    "approval": "Permission",
+    "question": "Needs your choice",
+    "planReview": "Plan review",
+    "generic": "Needs your action"
+  },
+  "action": {
+    "allowOnce": "Allow once",
+    "reject": "Reject",
+    "approve": "Approve",
+    "translate": "Translate",
+    "copy": "Copy",
+    "openSession": "Open session",
+    "detail": "Details",
+    "skip": "Skip",
+    "prev": "Back",
+    "next": "Next",
+    "submit": "Submit"
+  },
+  "hint": {
+    "copied": "Copied",
+    "copyFailed": "Copy failed",
+    "translating": "Translating…",
+    "translateFailed": "Translation failed",
+    "pending": "Working…",
+    "expired": "This request has ended",
+    "unanswered": "Choose or type an answer to continue",
+    "approvalFallback": "Tool {tool} requests elevated permission",
+    "genericBody": "This session needs your action"
+  },
+  "pager": "Question {index} / {total}",
+  "customPlaceholder": "Other answer…",
+  "untitled": "Untitled session",
+  "plan": {
+    "title": "Plan summary"
+  }
+}
